@@ -10,7 +10,7 @@ console.log(" Do a search with", term);
     return(
     <div>
         <SearchBar onSubmit={handleSubmit}/>
-         <h1>fgsfsfff</h1>
+        
 
     </div>
     );
