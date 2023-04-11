@@ -13,7 +13,7 @@ function App(){
     return(
     <div>
         <SearchBar onSubmit={handleSubmit}/>
-        <ImageList Images={images}/>
+        <ImageList images={images}/>
 
     </div>
     );
