@@ -3,7 +3,7 @@ function SearchBar({onSubmit}){
     const [term,SetTerm]=useState("");
    const handleFormSubmit =(event)=>{
     event.preventDefault();
-    onSubmit("cars");
+    onSubmit(term);
    };
    const handleChange=(event)=>{
     SetTerm(event.target.value);
