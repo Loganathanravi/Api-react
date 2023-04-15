@@ -7,14 +7,16 @@ function SearchBar({onSubmit}){
     onSubmit(term);
    };
    const handleChange=(event)=>{
-    SetTerm(event.target.value);
+    const type=event.target.value
+    SetTerm(type);
     };
 
     return(
     <div className="search-bar">
         <form onSubmit={handleFormSubmit}>
             <label>Enter Search Term</label>
-             <input value={term} onChange={handleChange}/>
+             <input value={term} type="text" onChange={handleChange}/>
+             <button  type="submit">search</button>
         </form>
         </div>
     );
